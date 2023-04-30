@@ -10,10 +10,10 @@ namespace HW_4.Data.Models
 
         [Display(Name = "Enter name")]
         [Required(ErrorMessage = "Required field")]
-        public string Name { get; set; }
+        public string name { get; set; }
 
         [Display(Name = "Enter email")]
         [Required(ErrorMessage = "Required field")]
-        public string Email { get; set; }
+        public string email { get; set; }
     }
 }

@@ -1,0 +1,5 @@
+{
+  "ConnectionStrings": {
+    "DefaultConnection": "Server=localhost;Database=ASPDevelopersApp;TrustServerCertificate=true;MultipleActiveResultSets=true;Trusted_Connection=True"
+  }
+}
