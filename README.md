@@ -47,7 +47,8 @@ Web-application with 4 pages:
   2. Community
   3. Registration
   4. Successful registration
-and local SQL Server database.
+
+Web-application uses local SQL Server database.
 
   
   
