@@ -49,6 +49,3 @@ Web-application with 4 pages:
   4. Successful registration
 
 Web-application uses local SQL Server database.
-
-  
-  
