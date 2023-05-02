@@ -1,0 +1,34 @@
+﻿@model HomeViewModel
+
+@{
+    if (@Model.amount > 0)
+    {
+        <h3 class="mt-5">@Model.amount developers are already part of the community!</h3>
+        <table class="table w-50 mt-5">
+            <thead class=".thead-light">
+                <tr>
+                    <th class="w-25" scope="col">Name</th>
+                    <th class="w-25" scope="col">Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                @{
+                    foreach (ASPDeveloper developer in Model.developers)
+                    {
+                        <tr>
+                            <td>@developer.name</td>
+                            <td>@developer.email</td>
+                        </tr>
+                    }
+                }
+            </tbody>
+        </table>
+
+        <h5 class="mt-5">If you want to become a <b>part of our community</b>, click to <a asp-controller="Registration" asp-action="Register">register</a></h5>
+    }
+    else
+    {
+        <h3 class="mt-5">Be the first one to register!</h3>
+        <p>Click <a asp-controller="Registration" asp-action="Register">here</a> to register</p>
+    }
+}

@@ -1,0 +1,30 @@
+﻿@model ASPDeveloper
+
+<div class="d-flex flex-column">
+    <h1 class="mt-4 mb-4">Registration</h1>
+
+    <span class="validation-error text-danger">
+        @Html.ValidationSummary(true)
+    </span>
+   
+    <form asp-action="Register" method="post" class="form-horizontal">
+        <div class="form-group mb-3">
+            <label asp-for="name"></label>
+            <div>
+                <input asp-for="name" class="form-control" />
+                <span asp-validation-for="name" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group mb-3">
+            <label asp-for="email"></label>
+            <div>
+                <input asp-for="email" class="form-control" />
+                <span asp-validation-for="email" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="d-flex justify-content-end">
+            <input class="btn btn-success mt-3" type="submit" value="Become developer" />
+        </div>
+    </form>
+    
+</div>
